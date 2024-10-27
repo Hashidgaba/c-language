@@ -21,7 +21,7 @@ int main(){
     cin >> urdu;
 
 
-    cout << "Here your marks is: "<< endl << "Maths = "<< Maths << endl << "English = " << English << endl << "Urdu = " << urdu << endl;
+    cout << "\nHere your marks is: "<< endl << "Maths = "<< Maths << endl << "English = " << English << endl << "Urdu = " << urdu << endl;
     int avg = Maths + English + urdu;
     cout << "average will be: " << endl << avg/3;
 
