@@ -17,16 +17,16 @@ int main(){
 
 
     // floyds triangle pattern
-    //numebr system
-    // int n1 = 5;
-    // int num = 1;
-    // for ( int i = 0; i < n1; i++){
-    //     for (int j = 0; j <= i; j++){
-    //         cout << num ;
-    //         num++;
-    //     }
-    //     cout << endl;
-    // }
+    // numebr system
+    int n1 = 5;
+    int num = 1;
+    for ( int i = 0; i < n1; i++){
+        for (int j = 0; j <= i; j++){
+            cout << num ;
+            num++;
+        }
+        cout << endl;
+    }
 
     // character system
     int n2 = 4;

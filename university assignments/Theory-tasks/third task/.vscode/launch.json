@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "c:/Users/Hashid gaba/Desktop/Hashid gaba/c++ problems/university assignments/Theory-tasks/third task",
+      "program": "c:/Users/Hashid gaba/Desktop/Hashid gaba/c++ problems/university assignments/Theory-tasks/third task/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
