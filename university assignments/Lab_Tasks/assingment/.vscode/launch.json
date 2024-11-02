@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Hashid gaba/Desktop/Hashid gaba/pf-task-list/Lab_Tasks/Assignment_02",
-      "program": "c:/Users/Hashid gaba/Desktop/Hashid gaba/pf-task-list/Lab_Tasks/Assignment_02/build/Debug/outDebug",
+      "cwd": "c:/Users/Hashid gaba/Desktop/Hashid gaba/c++ problems/university assignments/Lab_Tasks/assingment",
+      "program": "c:/Users/Hashid gaba/Desktop/Hashid gaba/c++ problems/university assignments/Lab_Tasks/assingment/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
