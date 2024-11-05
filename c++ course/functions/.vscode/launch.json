@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Hashid gaba/Desktop/Hashid gaba/c++ course/lectures/second lecture",
-      "program": "c:/Users/Hashid gaba/Desktop/Hashid gaba/c++ course/lectures/second lecture/build/Debug/outDebug",
+      "cwd": "c:/Users/Hashid gaba/Desktop/Hashid gaba/c++ problems/c++ course/functions",
+      "program": "c:/Users/Hashid gaba/Desktop/Hashid gaba/c++ problems/c++ course/functions/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
