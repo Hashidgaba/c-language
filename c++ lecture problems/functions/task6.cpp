@@ -23,7 +23,5 @@ int main(){
     primeNumber(17);
     primeNumber(71);
     primeNumber(72);
-
-
     return 0;
 }
