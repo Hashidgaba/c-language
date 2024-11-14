@@ -56,9 +56,9 @@ void temp :: addStu(){
     getline(cin,address);
 
     file.open("stuData.txt",ios :: out | ios :: app);
-    file<<rollNum<<"*";
-    file<<name<<"*";
-    file<<fName<<"*";
+    file<<rollNum<<"* ";
+    file<<name<<"* ";
+    file<<fName<<"* ";
     file<<address<<endl;
     file.close();
 }
@@ -72,10 +72,12 @@ void temp :: viewStu(){
     getline(file,address,'\n');
     while(!file.eof()){
         cout<<"\n";
+        cout << "Following are the details of " << name<< "::" << endl << endl; 
         cout<<"Student Roll Number :: "<<rollNum<<endl;
         cout<<"Student Name :: "<<name<<endl;
         cout<<"Student Father Name :: "<<fName<<endl;
         cout<<"Student Address :: "<<address<<endl;
+        cout << "----------------------------------------"<< endl;
 
         getline(file,rollNum,'*');
         getline(file,name,'*');
@@ -98,10 +100,17 @@ void temp :: searchStu(){
     while(!file.eof()){
         if(rollNum == search){
             cout<<endl;
+            cout << "Details about " << name << endl;
             cout<<"Student Roll Number :: "<<rollNum<<endl;
             cout<<"Student Name :: "<<name<<endl;
             cout<<"Student Father Name :: "<<fName<<endl;
-            cout<<"Student Address :: "<<address<<endl;       
+            cout<<"Student Address :: "<<address<<endl;
+            break;
+               
+        }else{
+            cout << "invalid Roll Number!" << endl;
+            break;
+
         }
         getline(file,rollNum,'*');
         getline(file,name,'*');
