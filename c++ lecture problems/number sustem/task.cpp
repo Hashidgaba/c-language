@@ -10,7 +10,6 @@ int decimalTobinary(int decNum){
         pow *= 10;
 
     }
-
     cout << ans << endl;
 }
 
