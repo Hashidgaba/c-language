@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int n =5;
+    int increament = 1;
+    for (int i = 1; i<= n; i++){
+      for (int j = 0; j < i; j++ ){
+        cout << increament << " ";
+        increament ++;
+      }
+      cout << endl;
+    }
+    return 0;
+
+}
