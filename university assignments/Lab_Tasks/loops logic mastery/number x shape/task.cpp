@@ -2,24 +2,48 @@
 using namespace std;
 int main()
 {
-    int n = 5;
-    for (int i = 1; i<= n - 2; i++){
-        //spaces
-        for (int j = 1; j < i; j++){
+    int n = 3;
+    int number = 1;
+    int number1 = 1;
+    // upper
+    for (int i = 1; i <= n; i++)
+    {
+        // spaces
+        for (int j = 1; j < i; j++)
+        {
             cout << " ";
         }
-        //number
-        cout << i;
+        //str
+        cout << number;
+        number ++;
         //spaces
-        for (int j = (2 * i)-1; j <= n - 2; j++){
+        for (int j = (2 * i)-1; j <= n;j++){
             cout << " ";
         }
-        if(i != n - 2){
-            cout << i;
+        if(i != n){
+            cout << number1;
+            number1++;
         }
+        
         cout << endl;
-
-
     }
-    return 0;
+
+    // bottom
+    for (int i = 1; i<= n - 1; i++){
+        //spaces
+        for (int j = i; j< n - 1;j++){
+            cout << " ";
+        }
+        //str
+        cout << number;
+        number ++;
+        //spaces
+        for (int j = 1; j <= (2 * i)-1; j++){
+            cout << " ";
+        }
+        cout << number1;
+        number1 ++;
+        cout << endl;
+    }
+    
 }

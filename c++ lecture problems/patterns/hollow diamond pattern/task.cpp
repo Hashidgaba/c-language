@@ -37,7 +37,6 @@ int main(){
         }
         cout << "*";
         }
-        // if (n - i -1 > 1)cout << "*";
         
 
         cout << endl;
