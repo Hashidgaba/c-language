@@ -1,8 +1,15 @@
 #include <iostream>
 using namespace std;
 int main(){
-    cout << "welcome to my page";
-    cout << endl;
-    return 0;
-
+	
+	int num=5;
+	cout<<++num<<endl;
+	cout<<num++<<endl;
+	cout<<num<<endl;
+	cout<<++num<<endl;
+	cout<<num++<<endl;
+	cout<<++num<<endl;
+	
+	
+	return 0;
 }
