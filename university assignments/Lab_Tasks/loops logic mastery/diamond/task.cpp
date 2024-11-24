@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int n = 10;
+    int n = 17;
     //upper loop
     for (int i = 1; i <= n; i++){
         //spaces

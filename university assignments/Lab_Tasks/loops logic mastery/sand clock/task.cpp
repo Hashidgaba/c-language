@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-    int n = 9;
+    int n = 17;
     // upper
     for (int i = 1; i <= n; i++)
     {
