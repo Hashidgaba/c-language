@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-//usage of conditional and logical operator
+//usage of conditional and all logical operator
 int main() {
 	int a;cin>>a;
 	int b;cin>>b;
@@ -24,5 +24,6 @@ int main() {
 }else{
 	cout<<"False"<<endl;
 }
+
     return 0;
 }
