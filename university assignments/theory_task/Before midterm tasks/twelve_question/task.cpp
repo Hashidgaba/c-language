@@ -6,7 +6,7 @@ using namespace std;
 int main() {
     int choice, number;
 
-    cout << "Choose an option:\n";
+    cout << "---------------Choose an option:---------------\n";
     cout << "1. Calculate square root\n";
     cout << "2. Calculate cube\n";
     cout << "3. Print number 50 times\n";
@@ -25,7 +25,7 @@ int main() {
             break;
         case 3:
             for (int i = 0; i < 50; i++) {
-                cout << number << " ";
+                cout << i << ". " << number << " ";
             }
             cout << endl;
             break;
