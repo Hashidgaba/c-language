@@ -24,8 +24,8 @@ int main() {
             cout << "Cube of " << number << " is " << pow(number, 3) << endl;
             break;
         case 3:
-            for (int i = 0; i < 50; i++) {
-                cout << i << ". " << number << " ";
+            for (int i = 1; i <= 50; i++) {
+                cout << i << ". " << number << endl;
             }
             cout << endl;
             break;
