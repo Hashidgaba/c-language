@@ -1,29 +1,39 @@
 #include <iostream>
-#include <algorithm> // For std::swap
+#include <string>
 using namespace std;
-
-// Function to reverse an array
-void reverseArray(int arr[], int size) {
-    int start = 0;
-    int end = size - 1;
-
-    // Swap elements until the middle
-    while (start < end) {
-        swap(arr[start], arr[end]); // Swap elements
-        start++;
-        end--;
+// factorial form of the number
+void fact(int n)
+{
+    int product = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        product *= i;
     }
+    cout << "FACTORIAL FORM OF A " << n << " is " << product << endl;;
 }
-
-int main(){
-    //find reverse an array
-    int arr [] = {2,4,8,16,32};
-    int size  = 5;
-    reverseArray(arr, size);
-    for (int i = 0; i < size ; i++){
-        cout << arr[i] << " ";
+// linear search algorithm
+int searchTarget(int arr[], int size, int target)
+{
+    int found = -1;
+    for (int i = 0; i < size; i++)
+    {
+        if (arr[i] == target)
+        {
+            fact(arr[i]);
+            found = i;
+            return (found);
+        }
     }
-    cout << endl;
+    cout << "Not found" << endl;
+    return (found);
+}
+int main()
+{
+    int size = 6;
+    int arr[size] = {1, 2, 3, 4, 5, 6};
+    int target;
+    cout << "Enter any number which you want to find" << endl;
+    cin >> target;
+    cout << searchTarget(arr, size, target);
     return 0;
-
 }

@@ -6,17 +6,15 @@ using namespace std;
         for (int i = 1 ; i <= n ; i++){
             sum += i;
         }
-        cout << "sum of a " << n << " is = "<< sum << endl;
+        // cout << "sum of a " << n << " is = "<< sum << endl;
         return sum;
     }
     
 
 int main(){
-    sumOfnumber(5);
-    sumOfnumber(10);
-    sumOfnumber(14);
-    sumOfnumber(2);
-    sumOfnumber(7);
+    int sum;
+    sum = sumOfnumber(5);
+    cout << "Sum of the 5 is " <<sum; 
    return 0;
 
 }
