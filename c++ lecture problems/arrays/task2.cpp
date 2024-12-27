@@ -9,7 +9,7 @@ void fact(int n)
     {
         product *= i;
     }
-    cout << "FACTORIAL FORM OF A " << n << " is " << product << endl;;
+    cout << "FACTORIAL FORM OF A " << n << " is " << product << endl;
 }
 // linear search algorithm
 int searchTarget(int arr[], int size, int target)
@@ -21,6 +21,7 @@ int searchTarget(int arr[], int size, int target)
         {
             fact(arr[i]);
             found = i;
+            cout << "Index of " << target << " is ";
             return (found);
         }
     }
