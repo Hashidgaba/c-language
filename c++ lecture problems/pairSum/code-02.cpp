@@ -15,6 +15,7 @@ vector <int> pairSum(vector <int> vec, int target){
         }else{
             finalAns.push_back(i);
             finalAns.push_back(j);
+            
             return finalAns;
         }
     }
