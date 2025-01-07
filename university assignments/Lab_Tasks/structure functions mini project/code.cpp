@@ -1,30 +1,29 @@
 #include <iostream>
-#include <vector>
 using namespace std;
-struct studentsData
+struct studentData
 {
     char name[10];
     int rollNumber;
     int marks[3];
 };
-bool isStudentEnroll = false;
-int indxOfstudent = 0;
-studentsData student[3];
-void displayStudents();
-void totalMarks();
+studentData student[3];
+int indexOfstudent = 0;
+bool isEnroll = false;
 void addStudent();
-
+void displayStudent();
+void totalMarks();
 int main()
 {
     int choice;
-    cout << "Student Report System" << endl;
-    cout << "1. Add student details" << endl;
-    cout << "2. Display students detail" << endl;
-    cout << "3. Total marks of the student" << endl;
-    cout << "4. Exit";
+    cout << "student Report System" << endl;
+    cout << "1.Add Student" << endl;
+    cout << "2.Display students" << endl;
+    cout << "3.total marks" << endl;
+    cout << "4.Exit" << endl;
+
     do
     {
-        cout << "choose any option from 1 to 4" << endl;
+        cout << "Please select any option 1 to 4" << endl;
         cin >> choice;
         switch (choice)
         {
@@ -32,66 +31,69 @@ int main()
             addStudent();
             break;
         case 2:
-            displayStudents();
+            displayStudent();
             break;
         case 3:
             totalMarks();
             break;
         case 4:
-            cout << "thank you so much see you soon" << endl;
+            cout << "Exit";
             break;
+
         default:
-            cout << "please Enter valid option" << endl;
+            cout << "invlid option" << endl;
             break;
         }
     } while (choice != 4);
-
     return 0;
 }
-void addStudent()
-{
-    
-    cout << "Enter student detail" << endl;
-    cout << "Enter student Name" << endl;
-    cin >> student[indxOfstudent].name;
-    cout << "Enter student Roll number" << endl;
-    cin >> student[indxOfstudent].rollNumber;
-    for (int i = 0; i < 3; i++)
-    {
-        cout << "Enter your marks subject " << i + 1 << endl;
-        cin >> student[i].marks[i];
+
+void addStudent(){
+    cout << "Enter Student Name" << endl;
+    cin >> student[indexOfstudent].name;
+
+    cout << "Enter Student Roll number" << endl;
+    cin >> student[indexOfstudent].rollNumber;
+    cout << "Enter your subject marks" << endl;
+    for(int i = 0; i < 3 ; i++){
+        cin >> student[indexOfstudent].marks[i];
     }
-    isStudentEnroll = true;
-    indxOfstudent++;
-    cout << "YOUR DETAILS HAVE BEEN SAVED" << endl;
-   
+    isEnroll = true;
+    indexOfstudent ++;
 }
-void totalMarks(){
-    cout << "marks";
-}
-void displayStudents()
-{
-    if (isStudentEnroll == true)
-    {
-        
-        cout << "Total Students Enroll is " << indxOfstudent<< endl;
-        cout << "your information is : " << endl;
-        for (int i = 0; i < indxOfstudent; i++)
-        {
+//print enroll students details
+void displayStudent(){
+    if(isEnroll == true){
+        cout << "Total Enroll Students: "<< indexOfstudent << endl;
+        for(int i = 0; i < indexOfstudent; i++){
             int sum = 0;
             cout << "\nName: " << student[i].name << endl;
             cout << "Roll Number" << student[i].rollNumber << endl;
-            cout << "Your subject marks is " << endl;
-            for (int j = 0; j < 3; j++)
-            {
-                cout << "subject" << j + 1 << ": " << student[i].marks[i] << endl;
-                sum += student[i].marks[i];
+            cout << "Marks of the student: " << i + 1 << endl;
+            for(int j = 0; j < 3; j++){
+               cout << "marks of the subject " << j + 1 << ": " << student[i].marks[j] << endl;
+               sum += student[i].marks[j];
             }
-            cout << "total marks: " << sum << endl;
+            cout << "Total marks is " << sum << endl;
         }
+    }else{
+        cout << "please Enroll any student" << endl;
     }
-    else
-    {
-        cout << "PLease Enroll any students first" << endl;
+};
+
+void totalMarks(){
+    if(isEnroll == true){
+        for(int i = 0; i < indexOfstudent; i++){
+            int sum = 0;
+            cout << "Marks of the student: " << i + 1 << endl;
+            for(int j = 0; j < 3; j++){
+               cout << "marks of the subject " << j + 1 << ": " << student[i].marks[j] << endl;
+               sum += student[i].marks[j];
+            }
+            cout << "Total marks is " << sum << endl;
+        }
+    }else{
+        cout << "please enroll any students" << endl;
     }
+     
 };
