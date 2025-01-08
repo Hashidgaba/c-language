@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+//first you should buy then sell another day
 int maxProfit(vector<int> &prices)
 {
     int bestBuy = prices[0];
