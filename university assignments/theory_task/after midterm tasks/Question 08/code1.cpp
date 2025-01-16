@@ -5,23 +5,26 @@ using namespace std;
 int main()
 {
     int n = 3;
-    int array1[n * 2] = {1, 2, 3};
-    int array2[] = {1,2,3};
-    for (int i = 0; i < n; i++)
-    {
-        array1[n + i] = array2[i];
+    int arr1[] = {1,2,4};
+    int arr2[] = {4,6,8};
+    int result[n * 2];
+    for(int i = 0; i < n; i++){
+        result[i] = arr1[i];
     }
-    // sort array in descending order
-    for (int i = 0; i < n * 2 - 1; i++)
+     for(int i = 0; i < n; i++){
+        result[n + i] = arr2[i];
+    }
+    // sort array in descending order without using any built in func
+    for (int i = 0; i < n * 2 ; i++)
     {
         for (int j = i + 1; j < n * 2; j++)
         {
-            if (array1[i] < array1[j])
+            if (result[i] < result[j])
             {
                 // swap two elements
-                int temp = array1[i];
-                array1[i] = array1[j];
-                array1[j] = temp;
+                int temp = result[i];
+                result[i] = result[j];
+                result[j] = temp;
             }
         }
     }
@@ -30,12 +33,12 @@ int main()
     int count = 0;
     for (int i = 1; i <= n * 2; i++)
     {
-        if (array1[i] == array1[i - 1])
+        if (result[i] == result[i - 1])
         {
             count++;
         }
-        cout << array1[i - 1] << " ";
+        cout << result[i - 1] << " ";
     }
-    cout << "\ntotal number of duplicate number is: " << count << endl;
+    cout << "\ntotal number of duplicate elements in array is: " << count << endl;
     return 0;
 }
