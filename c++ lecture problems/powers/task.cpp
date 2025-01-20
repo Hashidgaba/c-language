@@ -13,7 +13,7 @@ int main(){
             break;
         }
         else if(expo != n && i == n){
-            cout <<n <<" is not a power of 2" << endl;
+            cout << n <<" is not a power of 2" << endl;
             break;
         }
     }
