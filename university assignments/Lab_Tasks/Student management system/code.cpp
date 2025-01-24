@@ -91,8 +91,7 @@ void displayAllstudents()
     }
     else
     {
-        cout << "please Enroll students" << endl;
-        cout << "Now number of student is : " << studentCounter << endl;
+        cout << "please Enroll any students\nThers no any student data" << endl;
     }
 };
 
@@ -104,8 +103,13 @@ void addStudent()
     string dep;
     bool idExist = false;
     cout << "Enter student Name" << endl;
-    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Clear the input buffer completely
-    getline(cin, studentName);
+    if (studentCounter > 0)
+    {
+        cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Clear buffer before taking new input
+        getline(cin, studentName);
+    }else{
+        getline(cin,  studentName);
+    }
 
     cout << "Enter student ID" << endl;
     cin >> id;
@@ -197,7 +201,8 @@ void updateStudentdetail()
             cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Clear buffer before taking new input
             getline(cin, updatedName);
             cout << "Enter your department" << endl;
-            cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Clear buffer before taking new input
+
+            // cin.ignore(numeric_limits<streamsize>::max(), '\n'); // Clear buffer before taking new input
             getline(cin, updatedDep);
             name[indexChange] = updatedName;
             StudentID[indexChange] = updatedId;
