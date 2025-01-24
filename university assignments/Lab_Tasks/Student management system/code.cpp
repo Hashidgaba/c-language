@@ -4,12 +4,13 @@
 #include <iomanip>
 #include <limits>
 using namespace std;
-
+//declare all global variables
 vector<string> name;
 vector<int> StudentID;
 vector<string> department;
 int studentCounter = 0;
 int searchId;
+
 // declare all function
 void addStudent();
 void displayAllstudents();
